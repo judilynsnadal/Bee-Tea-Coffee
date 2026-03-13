@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bea Tea Coffee</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ======= NAVIGATION ======= -->
+  <nav>
+    <div class="nav-container">
+      <a href="../ADMIN PAGE/login1.html" class="logo">
+        <img src="images/logo_btc.png" alt="Logo" />
+        <span>Bea Tea Coffee</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../ADMIN PAGE/login1.html">Home</a></li>
+        <li><a href="../HOME PAGE/products.html">Products</a></li>
+        <li><a href="../HOME PAGE/gallery.html">Gallery</a></li>
+        <li><a href="../HOME PAGE/about.html">About</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= FORM CONTAINER ======= -->
+  <div class="container">
+    <div class="form-box">
+
+      <!-- ===== LOGIN FORM ===== -->
+      <form action="login.php" method="POST" id="loginForm" class="form active">
+        <h2>Login</h2>
+
+        <input type="email" name="email" placeholder="Email" required />
+        <div class="password-field">
+          <input type="password" name="password" placeholder="Password" required />
+          <i class="fa-solid fa-eye toggle-password" onclick="togglePassword(this)"></i>
+        </div>
+
+        <a href="#" id="showForgot" class="forgot-link">Forgot Password?</a>
+
+        <button type="submit">Login</button>
+
+        <p class="toggle-text">Don’t have an account? <a href="#" id="showSignup">Sign up</a></p>
+      </form>
+
+      <!-- ===== SIGNUP FORM ===== -->
+      <form action="signup.php" method="POST" id="signupForm" class="form">
+        <h2>Sign Up</h2>
+
+        <!-- NEW FIELD: Name -->
+        <input type="text" name="username" placeholder="Username" minlength="1" maxlength="20" required />
+        <input type="text" name="full_name" placeholder="Full Name" required />
+        <input type="text" name="contact_number" placeholder="09XX-XXX-YYYY" 
+          maxlength="13" required 
+          oninput="formatPhoneNumber(this)"
+          title="Format: 09XX-XXX-YYYY" />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="address" placeholder="Address" required />
+        <div class="gender">
+          <select name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <!-- NEW FIELD: Birthday -->
+        <input type="date" name="birthdate" placeholder="Birthday" required />
+
+        <input type="password" name="password" placeholder="Password (8-32 characters)" minlength="8" maxlength="32"
+          pattern="^[^:;<>,\x22]*$"
+          title="Password must be 8-32 characters and cannot contain symbols like : ; < > , or double quotes."
+          required />
+
+        <button type="submit">Sign Up</button>
+
+        <p class="toggle-text">Already have an account? <a href="#" id="showLoginFromSignup">Login</a></p>
+      </form>
+
+      <!-- ===== FORGOT PASSWORD FORM ===== -->
+      <form action="forgot_password.php" method="POST" id="forgotPasswordForm" class="form">
+        <h2>Reset Password</h2>
+        <p class="subtitle" id="resetSubtitle">Enter your email to receive an OTP.</p>
+
+        <input type="email" name="email" id="resetEmail" placeholder="Enter your Email" required />
+
+        <!-- OTP Field (Hidden by default) -->
+        <div id="otpSection" style="display: none;">
+          <input type="text" name="otp" id="resetOTP" placeholder="Enter 6-digit OTP" maxlength="6" />
+          <div class="password-field">
+            <input type="password" name="new_password" id="resetNewPassword"
+              placeholder="New Password (8-32 chars + 1 symbol)" minlength="8" maxlength="32"
+              pattern="^(?=.*[!@#$%^&*$])[^:;<>,\x22]*$"
+              title="Password must be 8-32 characters, contain at least one symbol (!@#$%^&*$), and cannot contain : ; < > , or quotes." />
+            <i class="fa-solid fa-eye toggle-password" onclick="togglePassword(this)"></i>
+          </div>
+        </div>
+
+        <button type="button" id="sendOTPBtn">Send OTP</button>
+        <button type="submit" id="finalResetBtn" style="display: none;">Update Password</button>
+
+        <p class="toggle-text"><a href="#" id="backToLogin">Back to Login</a></p>
+      </form>
+
+
+      <script>
+        // Toggle password visibility
+        function togglePassword(icon) {
+          const input = icon.previousElementSibling;
+          input.type = input.type === "password" ? "text" : "password";
+          icon.classList.toggle("fa-eye-slash");
+        }
+
+        // Switch between login and signup forms
+        const forgotForm = document.getElementById("forgotPasswordForm");
+        const showSignup = document.getElementById("showSignup");
+        const showLoginFromSignup = document.getElementById("showLoginFromSignup");
+        const showForgot = document.getElementById("showForgot");
+        const backToLogin = document.getElementById("backToLogin");
+
+        const container = document.querySelector(".container");
+
+        showSignup.addEventListener("click", (e) => {
+          e.preventDefault();
+          loginForm.classList.remove("active");
+          signupForm.classList.add("active");
+          forgotForm.classList.remove("active");
+          container.classList.add("signup-mode");
+        });
+
+        showLoginFromSignup.addEventListener("click", (e) => {
+          e.preventDefault();
+          signupForm.classList.remove("active");
+          loginForm.classList.add("active");
+          forgotForm.classList.remove("active");
+          container.classList.remove("signup-mode");
+        });
+
+        // Phone Number Formatter: 09XX-XXX-YYYY
+        function formatPhoneNumber(input) {
+          let value = input.value.replace(/\D/g, ''); // Remove non-digits
+          if (value.length > 11) value = value.slice(0, 11);
+          
+          let formatted = '';
+          if (value.length > 0) {
+            formatted = value.substring(0, 4);
+            if (value.length > 4) {
+              formatted += '-' + value.substring(4, 7);
+            }
+            if (value.length > 7) {
+              formatted += '-' + value.substring(7, 11);
+            }
+          }
+          input.value = formatted;
+        }
+
+        showForgot.addEventListener("click", (e) => {
+          e.preventDefault();
+          loginForm.classList.remove("active");
+          signupForm.classList.remove("active");
+          forgotForm.classList.add("active");
+          container.classList.remove("signup-mode");
+        });
+
+        backToLogin.addEventListener("click", (e) => {
+          e.preventDefault();
+          forgotForm.classList.remove("active");
+          loginForm.classList.add("active");
+          // Reset OTP view if user goes back
+          document.getElementById('otpSection').style.display = 'none';
+          document.getElementById('sendOTPBtn').style.display = 'block';
+          document.getElementById('finalResetBtn').style.display = 'none';
+          document.getElementById('resetSubtitle').innerText = 'Enter your email to receive an OTP.';
+        });
+
+
+        // OTP Logic
+        const sendOTPBtn = document.getElementById('sendOTPBtn');
+        const finalResetBtn = document.getElementById('finalResetBtn');
+        const otpSection = document.getElementById('otpSection');
+        const resetEmail = document.getElementById('resetEmail');
+        const resetSubtitle = document.getElementById('resetSubtitle');
+
+        sendOTPBtn.addEventListener('click', () => {
+          const email = resetEmail.value;
+          if (!email) {
+            alert("Please enter your email first.");
+            return;
+          }
+
+          sendOTPBtn.innerText = "Sending...";
+          sendOTPBtn.disabled = true;
+
+          const formData = new FormData();
+          formData.append('email', email);
+
+          fetch('send_otp.php', {
+            method: 'POST',
+            body: formData
+          })
+            .then(res => res.json())
+            .then(data => {
+              if (data.success) {
+                alert(data.message);
+                otpSection.style.display = 'block';
+                sendOTPBtn.style.display = 'none';
+                finalResetBtn.style.display = 'block';
+                resetSubtitle.innerText = 'Now enter the OTP and your new password.';
+                // Make password fields required now
+                document.getElementById('resetOTP').required = true;
+                document.getElementById('resetNewPassword').required = true;
+              } else {
+                alert(data.message);
+                sendOTPBtn.innerText = "Send OTP";
+                sendOTPBtn.disabled = false;
+              }
+            })
+            .catch(err => {
+              console.error(err);
+              alert("An error occurred. Please try again.");
+              sendOTPBtn.innerText = "Send OTP";
+              sendOTPBtn.disabled = false;
+            });
+        });
+
+
+        // FRONTEND (Connect JS to Backend)
+
+        // JS submit handler removed to allow PHP form submission
+
+
+      </script>
+
+</body>
+
+</html>

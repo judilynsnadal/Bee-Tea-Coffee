@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bea Tea Coffee</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo_btc.png" type="image/png" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="products.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="homecus.html" class="logo">
+        <img src="images/logo_btc.png" alt="Logo" />
+        Bea Tea Coffee
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="homecus.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="profile.php?pane=my-purchase" title="My Purchase"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        <li><a href="profile.php?pane=my-cart" title="My Cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+        <!-- User Dropdown -->
+        <li class="user-menu">
+          <a href="#" id="userIcon" class="user-tab">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <ul class="dropdown-menu" id="userDropdown">
+            <li><a href="profile.php?pane=my-account">My Profile</a></li>
+            <li><a href="logout.php" id="logoutBtn">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= PRODUCTS SECTION ================= -->
+  <section id="products" class="section">
+    <!-- Filters / Sorting -->
+    <div class="filters-section">
+      <div class="filters-bar">
+        <div class="filter-group">
+          <label for="category-filter">Category:</label>
+          <select id="category-filter" onchange="filterProducts()">
+            <option value="all">All</option>
+            <option value="milktea">Milk Tea</option>
+            <option value="fruittea">Fruit Tea</option>
+            <option value="icedtea">Iced Tea</option>
+            <option value="coffee">Coffee</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="price-filter">Price Range:</label>
+          <select id="price-filter" onchange="filterProducts()">
+            <option value="all">All Prices</option>
+            <option value="0-100">Under ₱100</option>
+            <option value="100-200">₱100 - ₱200</option>
+            <option value="200+">₱200+</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="sort-filter">Sort by:</label>
+          <select id="sort-filter" onchange="sortProducts()">
+            <option value="name">Name (A-Z)</option>
+            <option value="price-low">Price (Low to High)</option>
+            <option value="price-high">Price (High to Low)</option>
+            <option value="featured">Featured</option>
+          </select>
+        </div>
+
+        <div class="search-group">
+          <input type="text" id="search-input" placeholder="Search..." onkeyup="searchProducts()" />
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <h2 class="section-title">Products</h2>
+    <div id="dynamic-categories-container">
+      <!-- Section: Milk Tea -->
+      <div class="category-section" id="section-milktea" style="display:none;">
+        <h3 class="category-header"
+          style="margin-block: 20px; font-size: 1.5rem; text-align: center; border-bottom: none; padding-bottom: 5px; color: var(--text-color);">
+          Milk Tea</h3>
+        <div class="products-container" id="grid-milktea"></div>
+      </div>
+
+      <!-- Section: Fruit Tea -->
+      <div class="category-section" id="section-fruittea" style="display:none;">
+        <h3 class="category-header"
+          style="margin-block: 20px; font-size: 1.5rem; text-align: center; border-bottom: none; padding-bottom: 5px; color: var(--text-color);">
+          Fruit Tea</h3>
+        <div class="products-container" id="grid-fruittea"></div>
+      </div>
+
+      <!-- Section: Iced Tea -->
+      <div class="category-section" id="section-icedtea" style="display:none;">
+        <h3 class="category-header"
+          style="margin-block: 20px; font-size: 1.5rem; text-align: center; border-bottom: none; padding-bottom: 5px; color: var(--text-color);">
+          Iced Tea</h3>
+        <div class="products-container" id="grid-icedtea"></div>
+      </div>
+
+      <!-- Section: Frappe -->
+      <div class="category-section" id="section-frappe" style="display:none;">
+        <h3 class="category-header"
+          style="margin-block: 20px; font-size: 1.5rem; text-align: center; border-bottom: none; padding-bottom: 5px; color: var(--text-color);">
+          Frappe</h3>
+        <div class="products-container" id="grid-frappe"></div>
+      </div>
+
+      <!-- Section: Coffee -->
+      <div class="category-section" id="section-coffee" style="display:none;">
+        <h3 class="category-header"
+          style="margin-block: 20px; font-size: 1.5rem; text-align: center; border-bottom: none; padding-bottom: 5px; color: var(--text-color);">
+          Coffee</h3>
+        <div class="products-container" id="grid-coffee"></div>
+      </div>
+
+      <!-- Section: Others -->
+      <div class="category-section" id="section-others" style="display:none;">
+        <h3 class="category-header"
+          style="margin-block: 20px; font-size: 1.5rem; text-align: center; border-bottom: none; padding-bottom: 5px; color: var(--text-color);">
+          Others</h3>
+        <div class="products-container" id="grid-others"></div>
+      </div>
+    </div>
+
+
+    <!-- No Results Message -->
+    <div class="no-results" id="no-results" style="display: none;">
+      <i class="fas fa-search"></i>
+      <h3>No products found</h3>
+      <p>Try adjusting your search or filter criteria.</p>
+    </div>
+  </section>
+
+      <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h2 class="footer-title">
+  <img src="images/logo_btc.png" alt="Bea Tea Coffee Logo" class="footer-logo">
+  Bea Tea Coffee
+</h2>
+      </div>
+      <div class="footer-column">
+        <h3>Get in Touch</h3>
+        <a href="https://www.facebook.com/bee.tea.coffee.main" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/beeteacoffee_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          class="social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="adhome1.html">Home</a></li>
+          <li><a href="products1.html">Products</a></li>
+          <li><a href="gallery1.html">Gallery</a></li>
+          <li><a href="about1.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Bea Tea Coffee. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- External JS -->
+  <script src="mainest.js?v=5"></script>
+  <script src="profile.js?v=3"></script>
+  <script src="products.js?v=5"></script>
+
+</body>
+
+</html>

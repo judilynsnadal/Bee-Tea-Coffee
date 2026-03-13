@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bea Tea Coffee</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo_btc.png" type="image/png" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="homecus.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ======================= NAVIGATION ======================= -->
+  <nav>
+    <div class="nav-container">
+      <a href="homecus.html" class="logo">
+        <img src="images/logo_btc.png" alt="Bea Tea Coffee Logo" />
+        <span>Bea Tea Coffee</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="homecus.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="profile.php?pane=my-purchase" title="My Purchase"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        <li><a href="profile.php?pane=my-cart" title="My Cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+        <!-- USER DROPDOWN -->
+        <li class="user-menu">
+          <a href="#" id="userIcon" class="user-tab">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <ul class="dropdown-menu" id="userDropdown">
+            <li><a href="profile.php?pane=my-account">My Profile</a></li>
+            <li><a href="logout.php" id="logoutBtn">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================= HOME SECTION ======================= -->
+  <section class="home-section fade-up" id="home">
+    <div class="home-content">
+      <h1>Welcome to Bea Tea Coffee</h1>
+      <p>Discover amazing products and a cozy atmosphere</p>
+      <a href="products.html" class="order-btn">Order Now</a>
+    </div>
+  </section>
+
+  <!-- ======================= FEATURED SECTION ======================= -->
+  <section class="featured fade-up" id="products">
+    <div class="featured-text">
+      <h2>Featured Products</h2>
+      <p>Discover more drinks here...</p>
+      <a href="products.html" class="menu-btn">View All Products</a>
+    </div>
+
+    <div class="featured-images">
+      <div class="image-card active">
+        <img src="images/CARAMEL MACCHIATO.png" alt="Caramel Macchiato" />
+      </div>
+      <div class="image-card">
+        <img src="images/CHEESECAKE.png" alt="Cheesecake" />
+      </div>
+      <div class="image-card">
+        <img src="images/MOCHA.png" alt="Mocha" />
+      </div>
+
+      <div class="arrows">
+        <i class="fa-solid fa-chevron-left" id="prevBtn"></i>
+        <i class="fa-solid fa-chevron-right" id="nextBtn"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h2 class="footer-title">
+  <img src="images/logo_btc.png" alt="Bea Tea Coffee Logo" class="footer-logo">
+  Bea Tea Coffee
+</h2>
+      </div>
+      <div class="footer-column">
+        <h3>Get in Touch</h3>
+        <a href="https://www.facebook.com/bee.tea.coffee.main" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/beeteacoffee_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          class="social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="adhome1.html">Home</a></li>
+          <li><a href="products1.html">Products</a></li>
+          <li><a href="gallery1.html">Gallery</a></li>
+          <li><a href="about1.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Bea Tea Coffee. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="mainest.js"></script>
+</body>
+
+</html>

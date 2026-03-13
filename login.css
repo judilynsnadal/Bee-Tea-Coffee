@@ -1,0 +1,451 @@
+/* ================= RESET & BASE ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+    url('images/btc_banner.png') center/cover no-repeat;
+  color: #222;
+  min-height: 100vh;
+  /* changed from height to min-height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  /* Added top padding to avoid nav overlap */
+}
+
+/* ================= NAVIGATION ================= */
+nav {
+  width: 100%;
+  background: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  color: #f20608;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+/* ================= NAV LINKS ================= */
+.nav-links {
+  list-style: none;
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: #f20608;
+  transform: scale(1.05);
+}
+
+/* ================= HAMBURGER MENU ================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  margin-bottom: 4px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* ================= NAVBAR SCROLL EFFECT ================= */
+nav.scrolled {
+  background: rgba(34, 34, 34, 0.9);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= FORM CONTAINER ================= */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px) saturate(150%);
+  border-radius: 15px;
+  padding: 40px;
+  width: 350px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  transition: all 0.4s ease;
+  /* Smooth transitions for all properties */
+  animation: popIn 0.6s ease;
+}
+
+/* Signup Mode Styles */
+.container.signup-mode {
+  width: 500px;
+  /* Wider */
+  margin: 50px auto;
+  /* Downer and centered with equal top/bottom margin */
+  border-radius: 5px;
+  /* Make it square-ish */
+}
+
+/* FORM BOX */
+.form-box {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ================= FORMS ================= */
+.form {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form.active {
+  display: flex;
+  animation: slideIn 0.4s ease forwards;
+}
+
+/* ================= HEADINGS ================= */
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* ================= INPUTS ================= */
+input {
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  color: #333;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 8px rgba(242, 6, 8, 0.3);
+}
+
+input[type="date"] {
+  color: #333 !important;
+  background-color: #ffffff !important;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Ensure internal date fields are visible */
+input[type="date"]::-webkit-datetime-edit,
+input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  color: #333 !important;
+}
+
+/* Ensure no white text appears during selection */
+input[type="date"]::selection {
+  background: #f2060866;
+  color: #333 !important;
+}
+
+/* Specific fix for Webkit's datetime edit parts on focus */
+input[type="date"]:focus::-webkit-datetime-edit,
+input[type="date"]:focus::-webkit-datetime-edit-month-field,
+input[type="date"]:focus::-webkit-datetime-edit-day-field,
+input[type="date"]:focus::-webkit-datetime-edit-year-field {
+  color: #333 !important;
+}
+
+/* PASSWORD FIELD */
+.password-field {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-password:hover {
+  color: #f20608;
+  transform: scale(1.2);
+}
+
+/* ================= BUTTONS ================= */
+button {
+  background: #f20608;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #c90506;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(242, 6, 8, 0.4);
+}
+
+.wide-btn {
+  width: 100%;
+}
+
+/* ================= TOGGLE TEXT ================= */
+.toggle-text {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.toggle-text a {
+  color: #f20608;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.toggle-text a:hover {
+  text-decoration: underline;
+  color: #c90506;
+}
+
+.forgot-link {
+  display: block;
+  text-align: right;
+  font-size: 13px;
+  color: #f20608;
+  text-decoration: none;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+  color: #c90506;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ================= GENDER FIELD ================= */
+.gender {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #333;
+}
+
+.gender select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  cursor: pointer;
+  width: 100%;
+  transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gender select:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.gender select:focus {
+  border-color: #f20608;
+  box-shadow: 0 0 8px rgba(242, 6, 8, 0.3);
+}
+
+/* ================= SIGNUP LANDSCAPE LAYOUT ================= */
+.signup-landscape .signup-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.signup-landscape .left-column,
+.signup-landscape .right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.signup-landscape {
+  width: 100%;
+}
+
+.container:has(.signup-landscape.active) {
+  width: 600px;
+  transition: width 0.4s ease;
+}
+
+.signup-landscape button {
+  width: auto;
+  padding: 10px 30px;
+  align-self: center;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #222;
+    flex-direction: column;
+    width: 220px;
+    text-align: right;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin: 15px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .signup-landscape .signup-grid {
+    flex-direction: column;
+  }
+
+  .container:has(.signup-landscape.active) {
+    width: 90%;
+  }
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
