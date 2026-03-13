@@ -1,0 +1,276 @@
+2026-03-06 03:16:27 - === NEW REQUEST === User ID: 15
+2026-03-06 03:16:27 - Raw Input: {"name":"Blue Berry Fruit Tea","price":"49.00","image":"../uploads/1772620420_BLUEBERRYFRUITTEA.png","quantity":1}
+2026-03-06 03:16:27 - Check Query Success: 0 rows found.
+2026-03-06 03:16:27 - Insert Success! New Cart ID: 28
+2026-03-06 03:16:28 - === NEW REQUEST === User ID: 15
+2026-03-06 03:16:28 - Raw Input: {"name":"Blue Berry Fruit Tea","price":"49.00","image":"../uploads/1772620420_BLUEBERRYFRUITTEA.png","quantity":1}
+2026-03-06 03:16:28 - Check Query Success: 1 rows found.
+2026-03-06 03:16:28 - Update Success: Quantity set to 2 for Cart ID 28
+2026-03-06 03:17:05 - === NEW REQUEST === User ID: 15
+2026-03-06 03:17:05 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-06 03:17:05 - Check Query Success: 0 rows found.
+2026-03-06 03:17:05 - Insert Success! New Cart ID: 29
+2026-03-06 03:18:38 - === NEW REQUEST === User ID: 30
+2026-03-06 03:18:38 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-06 03:18:38 - Check Query Success: 0 rows found.
+2026-03-06 03:18:38 - Insert Success! New Cart ID: 30
+2026-03-06 03:19:03 - === NEW REQUEST === User ID: 30
+2026-03-06 03:19:03 - Raw Input: {"name":"Blue Berry Fruit Tea","price":"49.00","image":"../uploads/1772620420_BLUEBERRYFRUITTEA.png","quantity":1}
+2026-03-06 03:19:03 - Check Query Success: 0 rows found.
+2026-03-06 03:19:03 - Insert Success! New Cart ID: 31
+2026-03-06 03:26:01 - === NEW REQUEST === User ID: 30
+2026-03-06 03:26:01 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-06 03:26:01 - Check Query Success: 0 rows found.
+2026-03-06 03:26:01 - Insert Success! New Cart ID: 32
+2026-03-06 03:31:38 - === NEW REQUEST === User ID: 30
+2026-03-06 03:31:38 - Raw Input: {"name":"Blue Berry Fruit Tea","price":"49.00","image":"../uploads/1772620420_BLUEBERRYFRUITTEA.png","quantity":1}
+2026-03-06 03:31:38 - Check Query Success: 0 rows found.
+2026-03-06 03:31:38 - Insert Success! New Cart ID: 33
+2026-03-06 03:35:19 - === NEW REQUEST === User ID: 33
+2026-03-06 03:35:19 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-06 03:35:19 - Check Query Success: 0 rows found.
+2026-03-06 03:35:19 - Insert Success! New Cart ID: 34
+2026-03-06 03:44:06 - === NEW REQUEST === User ID: 30
+2026-03-06 03:44:06 - Raw Input: {"name":"Blue Berry Fruit Tea","price":"49.00","image":"../uploads/1772620420_BLUEBERRYFRUITTEA.png","quantity":1}
+2026-03-06 03:44:06 - Check Query Success: 0 rows found.
+2026-03-06 03:44:06 - Insert Success! New Cart ID: 35
+2026-03-06 03:45:03 - === NEW REQUEST === User ID: 15
+2026-03-06 03:45:03 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-06 03:45:03 - Check Query Success: 1 rows found.
+2026-03-06 03:45:03 - Update Success: Quantity set to 2 for Cart ID 29
+2026-03-06 03:45:45 - === NEW REQUEST === User ID: 30
+2026-03-06 03:45:45 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-06 03:45:45 - Check Query Success: 0 rows found.
+2026-03-06 03:45:46 - Insert Success! New Cart ID: 36
+2026-03-06 03:48:02 - === NEW REQUEST === User ID: 30
+2026-03-06 03:48:02 - Raw Input: {"name":"Blue Berry Fruit Tea","price":"49.00","image":"../uploads/1772620420_BLUEBERRYFRUITTEA.png","quantity":1}
+2026-03-06 03:48:02 - Check Query Success: 0 rows found.
+2026-03-06 03:48:02 - Insert Success! New Cart ID: 37
+2026-03-06 04:20:50 - === NEW REQUEST === User ID: 30
+2026-03-06 04:20:50 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-06 04:20:50 - Check Query Success: 0 rows found.
+2026-03-06 04:20:50 - Insert Success! New Cart ID: 38
+2026-03-06 04:43:58 - === NEW REQUEST === User ID: 33
+2026-03-06 04:43:58 - Raw Input: {"name":"MATCHA FRAPPE","price":"39.00","image":"../uploads/1772768338_MATCHAFRAPPE.png","quantity":1}
+2026-03-06 04:43:58 - Check Query Success: 0 rows found.
+2026-03-06 04:43:58 - Insert Success! New Cart ID: 39
+2026-03-06 07:31:36 - === NEW REQUEST === User ID: 23
+2026-03-06 07:31:36 - Raw Input: {"name":"COOKIES & CREAM","price":"39.00","image":"../uploads/1772768263_COOKIESCREAM1.png","quantity":1}
+2026-03-06 07:31:36 - Check Query Success: 0 rows found.
+2026-03-06 07:31:36 - Insert Success! New Cart ID: 40
+2026-03-06 07:34:15 - === NEW REQUEST === User ID: 23
+2026-03-06 07:34:15 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-06 07:34:15 - Check Query Success: 0 rows found.
+2026-03-06 07:34:15 - Insert Success! New Cart ID: 41
+2026-03-06 08:46:36 - === NEW REQUEST === User ID: 33
+2026-03-06 08:46:36 - Raw Input: {"name":"CHEESECAKE FRAPPE","price":"39.00","image":"../uploads/1772768227_CHEESECAKE1.png","quantity":1}
+2026-03-06 08:46:36 - Check Query Success: 0 rows found.
+2026-03-06 08:46:36 - Insert Success! New Cart ID: 42
+2026-03-06 09:39:46 - === NEW REQUEST === User ID: 33
+2026-03-06 09:39:46 - Raw Input: {"name":"Blue Berry Fruit Tea","price":"49.00","image":"../uploads/1772620420_BLUEBERRYFRUITTEA.png","quantity":1}
+2026-03-06 09:39:46 - Check Query Success: 0 rows found.
+2026-03-06 09:39:46 - Insert Success! New Cart ID: 43
+2026-03-06 09:42:47 - === NEW REQUEST === User ID: 33
+2026-03-06 09:42:47 - Raw Input: {"name":"MANGO FRUIT TEA","price":"39.00","image":"../uploads/1772768051_MANGOFRUITTEA.png","quantity":1}
+2026-03-06 09:42:47 - Check Query Success: 0 rows found.
+2026-03-06 09:42:47 - Insert Success! New Cart ID: 44
+2026-03-06 09:49:14 - === NEW REQUEST === User ID: 33
+2026-03-06 09:49:14 - Raw Input: {"name":"MANGO FRUIT TEA","price":"39.00","image":"../uploads/1772768051_MANGOFRUITTEA.png","quantity":1}
+2026-03-06 09:49:14 - Check Query Success: 1 rows found.
+2026-03-06 09:49:14 - Update Success: Quantity set to 2 for Cart ID 44
+2026-03-06 09:50:31 - === NEW REQUEST === User ID: 15
+2026-03-06 09:50:31 - Raw Input: {"name":"LYCHEE FRUIT TEA","price":"39.00","image":"../uploads/1772768099_LYCHEEFRUITTEA.png","quantity":1}
+2026-03-06 09:50:31 - Check Query Success: 0 rows found.
+2026-03-06 09:50:31 - Insert Success! New Cart ID: 45
+2026-03-06 09:51:04 - === NEW REQUEST === User ID: 33
+2026-03-06 09:51:04 - Raw Input: {"name":"LYCHEE FRUIT TEA","price":"39.00","image":"../uploads/1772768099_LYCHEEFRUITTEA.png","quantity":1}
+2026-03-06 09:51:04 - Check Query Success: 0 rows found.
+2026-03-06 09:51:04 - Insert Success! New Cart ID: 46
+2026-03-06 10:15:18 - === NEW REQUEST === User ID: 33
+2026-03-06 10:15:18 - Raw Input: {"name":"MANGO FRUIT TEA","price":"39.00","image":"../uploads/1772768051_MANGOFRUITTEA.png","quantity":1}
+2026-03-06 10:15:18 - Check Query Success: 0 rows found.
+2026-03-06 10:15:18 - Insert Success! New Cart ID: 47
+2026-03-06 11:02:36 - === NEW REQUEST === User ID: 33
+2026-03-06 11:02:36 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-06 11:02:36 - Check Query Success: 0 rows found.
+2026-03-06 11:02:36 - Insert Success! New Cart ID: 48
+2026-03-06 11:02:36 - === NEW REQUEST === User ID: 33
+2026-03-06 11:02:36 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-06 11:02:36 - Check Query Success: 1 rows found.
+2026-03-06 11:02:36 - Update Success: Quantity set to 2 for Cart ID 48
+2026-03-07 04:22:15 - === NEW REQUEST === User ID: 33
+2026-03-07 04:22:15 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-07 04:22:15 - Check Query Success: 1 rows found.
+2026-03-07 04:22:15 - Update Success: Quantity set to 2 for Cart ID 48
+2026-03-07 04:22:44 - === NEW REQUEST === User ID: 33
+2026-03-07 04:22:44 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-07 04:22:44 - Check Query Success: 0 rows found.
+2026-03-07 04:22:44 - Insert Success! New Cart ID: 49
+2026-03-07 04:27:36 - === NEW REQUEST === User ID: 33
+2026-03-07 04:27:36 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-07 04:27:36 - Check Query Success: 0 rows found.
+2026-03-07 04:27:36 - Insert Success! New Cart ID: 50
+2026-03-07 04:36:11 - === NEW REQUEST === User ID: 33
+2026-03-07 04:36:11 - Raw Input: {"name":"STRAWBERRY FRAPPE","price":"39.00","image":"../uploads/1772768453_STRAWBERRYFRAPPE.png","quantity":1}
+2026-03-07 04:36:11 - Check Query Success: 0 rows found.
+2026-03-07 04:36:11 - Insert Success! New Cart ID: 51
+2026-03-07 04:48:02 - === NEW REQUEST === User ID: 33
+2026-03-07 04:48:02 - Raw Input: {"name":"CHEESECAKE FRAPPE","price":"39.00","image":"../uploads/1772768227_CHEESECAKE1.png","quantity":1}
+2026-03-07 04:48:02 - Check Query Success: 0 rows found.
+2026-03-07 04:48:02 - Insert Success! New Cart ID: 52
+2026-03-07 05:00:07 - === NEW REQUEST === User ID: 33
+2026-03-07 05:00:07 - Raw Input: {"name":"CHEESECAKE FRAPPE","price":"39.00","image":"../uploads/1772768227_CHEESECAKE1.png","quantity":1}
+2026-03-07 05:00:07 - Check Query Success: 0 rows found.
+2026-03-07 05:00:07 - Insert Success! New Cart ID: 53
+2026-03-07 05:13:11 - === NEW REQUEST === User ID: 15
+2026-03-07 05:13:11 - Raw Input: {"name":"MATCHA FRAPPE","price":"39.00","image":"../uploads/1772768338_MATCHAFRAPPE.png","quantity":1}
+2026-03-07 05:13:11 - Check Query Success: 0 rows found.
+2026-03-07 05:13:11 - Insert Success! New Cart ID: 54
+2026-03-07 05:13:48 - === NEW REQUEST === User ID: 33
+2026-03-07 05:13:48 - Raw Input: {"name":"MATCHA FRAPPE","price":"39.00","image":"../uploads/1772768338_MATCHAFRAPPE.png","quantity":1}
+2026-03-07 05:13:48 - Check Query Success: 0 rows found.
+2026-03-07 05:13:48 - Insert Success! New Cart ID: 55
+2026-03-07 05:20:00 - === NEW REQUEST === User ID: 15
+2026-03-07 05:20:00 - Raw Input: {"name":"CARAMEL MACCHIATO","price":"39.00","image":"../uploads/1772768170_CARAMELMACCHIATO.png","quantity":1}
+2026-03-07 05:20:00 - Check Query Success: 0 rows found.
+2026-03-07 05:20:00 - Insert Success! New Cart ID: 56
+2026-03-07 05:20:30 - === NEW REQUEST === User ID: 33
+2026-03-07 05:20:30 - Raw Input: {"name":"CARAMEL MACCHIATO","price":"39.00","image":"../uploads/1772768170_CARAMELMACCHIATO.png","quantity":1}
+2026-03-07 05:20:30 - Check Query Success: 0 rows found.
+2026-03-07 05:20:30 - Insert Success! New Cart ID: 57
+2026-03-07 05:20:59 - === NEW REQUEST === User ID: 33
+2026-03-07 05:20:59 - Raw Input: {"name":"STRAWBERRY FRAPPE","price":"39.00","image":"../uploads/1772768453_STRAWBERRYFRAPPE.png","quantity":1}
+2026-03-07 05:20:59 - Check Query Success: 0 rows found.
+2026-03-07 05:20:59 - Insert Success! New Cart ID: 58
+2026-03-07 05:22:41 - === NEW REQUEST === User ID: 33
+2026-03-07 05:22:41 - Raw Input: {"name":"MATCHA FRAPPE","price":"39.00","image":"../uploads/1772768338_MATCHAFRAPPE.png","quantity":1}
+2026-03-07 05:22:41 - Check Query Success: 0 rows found.
+2026-03-07 05:22:41 - Insert Success! New Cart ID: 59
+2026-03-07 05:46:24 - === NEW REQUEST === User ID: 33
+2026-03-07 05:46:24 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-07 05:46:24 - Check Query Success: 0 rows found.
+2026-03-07 05:46:24 - Insert Success! New Cart ID: 60
+2026-03-07 06:08:49 - === NEW REQUEST === User ID: 33
+2026-03-07 06:08:49 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-07 06:08:49 - Check Query Success: 0 rows found.
+2026-03-07 06:08:49 - Insert Success! New Cart ID: 61
+2026-03-07 06:09:29 - === NEW REQUEST === User ID: 33
+2026-03-07 06:09:29 - Raw Input: {"name":"MANGO FRUIT TEA","price":"39.00","image":"../uploads/1772768051_MANGOFRUITTEA.png","quantity":1}
+2026-03-07 06:09:29 - Check Query Success: 0 rows found.
+2026-03-07 06:09:29 - Insert Success! New Cart ID: 62
+2026-03-07 06:12:17 - === NEW REQUEST === User ID: 33
+2026-03-07 06:12:17 - Raw Input: {"name":"LYCHEE FRUIT TEA","price":"39.00","image":"../uploads/1772768099_LYCHEEFRUITTEA.png","quantity":1}
+2026-03-07 06:12:17 - Check Query Success: 0 rows found.
+2026-03-07 06:12:17 - Insert Success! New Cart ID: 63
+2026-03-07 07:26:40 - === NEW REQUEST === User ID: 37
+2026-03-07 07:26:40 - Raw Input: {"name":"LYCHEE FRUIT TEA","price":"39.00","image":"../uploads/1772768099_LYCHEEFRUITTEA.png","quantity":1}
+2026-03-07 07:26:40 - Check Query Success: 0 rows found.
+2026-03-07 07:26:40 - Insert Success! New Cart ID: 64
+2026-03-07 07:30:03 - === NEW REQUEST === User ID: 37
+2026-03-07 07:30:03 - Raw Input: {"name":"MANGO FRUIT TEA","price":"39.00","image":"../uploads/1772768051_MANGOFRUITTEA.png","quantity":1}
+2026-03-07 07:30:03 - Check Query Success: 0 rows found.
+2026-03-07 07:30:03 - Insert Success! New Cart ID: 65
+2026-03-07 07:35:57 - === NEW REQUEST === User ID: 37
+2026-03-07 07:35:57 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-07 07:35:57 - Check Query Success: 0 rows found.
+2026-03-07 07:35:57 - Insert Success! New Cart ID: 66
+2026-03-07 07:36:41 - === NEW REQUEST === User ID: 37
+2026-03-07 07:36:41 - Raw Input: {"name":"Blue Berry Fruit Tea","price":"49.00","image":"../uploads/1772620420_BLUEBERRYFRUITTEA.png","quantity":1}
+2026-03-07 07:36:41 - Check Query Success: 0 rows found.
+2026-03-07 07:36:41 - Insert Success! New Cart ID: 67
+2026-03-07 10:10:17 - === NEW REQUEST === User ID: 22
+2026-03-07 10:10:17 - Raw Input: {"name":"MATCHA FRAPPE","price":"39.00","image":"../uploads/1772768338_MATCHAFRAPPE.png","quantity":1}
+2026-03-07 10:10:17 - Check Query Success: 0 rows found.
+2026-03-07 10:10:17 - Insert Success! New Cart ID: 68
+2026-03-09 06:57:46 - === NEW REQUEST === User ID: 9
+2026-03-09 06:57:46 - Raw Input: {"name":"MANGO FRUIT TEA","price":"39.00","image":"../uploads/1772768051_MANGOFRUITTEA.png","quantity":1}
+2026-03-09 06:57:46 - Check Query Success: 0 rows found.
+2026-03-09 06:57:46 - Insert Success! New Cart ID: 69
+2026-03-09 06:59:25 - === NEW REQUEST === User ID: 9
+2026-03-09 06:59:25 - Raw Input: {"name":"STRAWBERRY FRAPPE","price":"39.00","image":"../uploads/1772768453_STRAWBERRYFRAPPE.png","quantity":1}
+2026-03-09 06:59:25 - Check Query Success: 0 rows found.
+2026-03-09 06:59:25 - Insert Success! New Cart ID: 70
+2026-03-09 09:32:55 - === NEW REQUEST === User ID: 38
+2026-03-09 09:32:55 - Raw Input: {"name":"MANGO FRUIT TEA","price":"39.00","image":"../uploads/1772768051_MANGOFRUITTEA.png","quantity":1}
+2026-03-09 09:32:55 - Check Query Success: 0 rows found.
+2026-03-09 09:32:55 - Insert Success! New Cart ID: 71
+2026-03-09 09:38:36 - === NEW REQUEST === User ID: 38
+2026-03-09 09:38:36 - Raw Input: {"name":"LYCHEE FRUIT TEA","price":"39.00","image":"../uploads/1772768099_LYCHEEFRUITTEA.png","quantity":1}
+2026-03-09 09:38:36 - Check Query Success: 0 rows found.
+2026-03-09 09:38:36 - Insert Success! New Cart ID: 72
+2026-03-09 09:39:27 - === NEW REQUEST === User ID: 38
+2026-03-09 09:39:27 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-09 09:39:27 - Check Query Success: 0 rows found.
+2026-03-09 09:39:27 - Insert Success! New Cart ID: 73
+2026-03-09 10:33:22 - === NEW REQUEST === User ID: 39
+2026-03-09 10:33:22 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-09 10:33:22 - Check Query Success: 0 rows found.
+2026-03-09 10:33:22 - Insert Success! New Cart ID: 74
+2026-03-09 11:43:22 - === NEW REQUEST === User ID: 37
+2026-03-09 11:43:22 - Raw Input: {"name":"COOKIES & CREAM FRAPPE","price":"39.00","image":"../uploads/1772768263_COOKIESCREAM1.png","quantity":1}
+2026-03-09 11:43:22 - Check Query Success: 0 rows found.
+2026-03-09 11:43:22 - Insert Success! New Cart ID: 75
+2026-03-09 15:37:37 - === NEW REQUEST === User ID: 39
+2026-03-09 15:37:37 - Raw Input: {"name":"LYCHEE FRUIT TEA","price":"39.00","image":"../uploads/1772768099_LYCHEEFRUITTEA.png","quantity":1}
+2026-03-09 15:37:37 - Check Query Success: 0 rows found.
+2026-03-09 15:37:37 - Insert Success! New Cart ID: 76
+2026-03-10 04:26:57 - === NEW REQUEST === User ID: 43
+2026-03-10 04:26:57 - Raw Input: {"name":"Blue Berry Fruit Tea","price":"49.00","image":"../uploads/1772620420_BLUEBERRYFRUITTEA.png","quantity":1}
+2026-03-10 04:26:57 - Check Query Success: 0 rows found.
+2026-03-10 04:26:57 - Insert Success! New Cart ID: 77
+2026-03-10 04:27:47 - === NEW REQUEST === User ID: 43
+2026-03-10 04:27:47 - Raw Input: {"name":"STRAWBERRY FRAPPE","price":"39.00","image":"../uploads/1772768453_STRAWBERRYFRAPPE.png","quantity":1}
+2026-03-10 04:27:47 - Check Query Success: 0 rows found.
+2026-03-10 04:27:47 - Insert Success! New Cart ID: 78
+2026-03-10 05:16:03 - === NEW REQUEST === User ID: 44
+2026-03-10 05:16:03 - Raw Input: {"name":"COOKIES & CREAM FRAPPE","price":"39.00","image":"../uploads/1772768263_COOKIESCREAM1.png","quantity":1}
+2026-03-10 05:16:03 - Check Query Success: 0 rows found.
+2026-03-10 05:16:03 - Insert Success! New Cart ID: 79
+2026-03-10 15:39:01 - === NEW REQUEST === User ID: 43
+2026-03-10 15:39:01 - Raw Input: {"name":"COOKIES & CREAM FRAPPE","price":"39.00","image":"../uploads/1772768263_COOKIESCREAM1.png","quantity":1}
+2026-03-10 15:39:01 - Check Query Success: 0 rows found.
+2026-03-10 15:39:01 - Insert Success! New Cart ID: 80
+2026-03-11 13:33:24 - === NEW REQUEST === User ID: 40
+2026-03-11 13:33:24 - Raw Input: {"name":"STRAWBERRY FRAPPE","price":"39.00","image":"../uploads/1772768453_STRAWBERRYFRAPPE.png","quantity":1}
+2026-03-11 13:33:25 - Check Query Success: 0 rows found.
+2026-03-11 13:33:25 - Insert Success! New Cart ID: 81
+2026-03-11 13:42:27 - === NEW REQUEST === User ID: 40
+2026-03-11 13:42:27 - Raw Input: {"name":"Blue Berry Fruit Tea","price":"49.00","image":"../uploads/1772620420_BLUEBERRYFRUITTEA.png","quantity":1}
+2026-03-11 13:42:27 - Check Query Success: 0 rows found.
+2026-03-11 13:42:27 - Insert Success! New Cart ID: 82
+2026-03-11 14:40:55 - === NEW REQUEST === User ID: 25
+2026-03-11 14:40:55 - Raw Input: {"name":"LYCHEE FRUIT TEA","price":"39.00","image":"../uploads/1772768099_LYCHEEFRUITTEA.png","quantity":1}
+2026-03-11 14:40:55 - Check Query Success: 0 rows found.
+2026-03-11 14:40:55 - Insert Success! New Cart ID: 83
+2026-03-12 04:41:10 - === NEW REQUEST === User ID: 25
+2026-03-12 04:41:10 - Raw Input: {"name":"MANGO FRUIT TEA","price":"39.00","image":"../uploads/1772768051_MANGOFRUITTEA.png","quantity":1}
+2026-03-12 04:41:10 - Check Query Success: 0 rows found.
+2026-03-12 04:41:10 - Insert Success! New Cart ID: 84
+2026-03-12 04:41:45 - === NEW REQUEST === User ID: 43
+2026-03-12 04:41:45 - Raw Input: {"name":"LYCHEE FRUIT TEA","price":"39.00","image":"../uploads/1772768099_LYCHEEFRUITTEA.png","quantity":1}
+2026-03-12 04:41:45 - Check Query Success: 0 rows found.
+2026-03-12 04:41:45 - Insert Success! New Cart ID: 85
+2026-03-12 04:42:22 - === NEW REQUEST === User ID: 43
+2026-03-12 04:42:22 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-12 04:42:22 - Check Query Success: 0 rows found.
+2026-03-12 04:42:22 - Insert Success! New Cart ID: 86
+2026-03-12 04:46:26 - === NEW REQUEST === User ID: 47
+2026-03-12 04:46:26 - Raw Input: {"name":"COOKIES & CREAM FRAPPE","price":"39.00","image":"../uploads/1772768263_COOKIESCREAM1.png","quantity":1}
+2026-03-12 04:46:26 - Check Query Success: 0 rows found.
+2026-03-12 04:46:26 - Insert Success! New Cart ID: 87
+2026-03-12 07:33:20 - === NEW REQUEST === User ID: 47
+2026-03-12 07:33:20 - Raw Input: {"name":"MANGO FRUIT TEA","price":"39.00","image":"../uploads/1772768051_MANGOFRUITTEA.png","quantity":1}
+2026-03-12 07:33:20 - Check Query Success: 0 rows found.
+2026-03-12 07:33:20 - Insert Success! New Cart ID: 88
+2026-03-12 07:40:24 - === NEW REQUEST === User ID: 47
+2026-03-12 07:40:24 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-12 07:40:24 - Check Query Success: 0 rows found.
+2026-03-12 07:40:24 - Insert Success! New Cart ID: 89
+2026-03-12 07:40:35 - === NEW REQUEST === User ID: 47
+2026-03-12 07:40:35 - Raw Input: {"name":"MANGO FRUIT TEA","price":"39.00","image":"../uploads/1772768051_MANGOFRUITTEA.png","quantity":1}
+2026-03-12 07:40:35 - Check Query Success: 0 rows found.
+2026-03-12 07:40:35 - Insert Success! New Cart ID: 90
+2026-03-12 07:44:25 - === NEW REQUEST === User ID: 47
+2026-03-12 07:44:25 - Raw Input: {"name":"Green Apple Fruit Tea","price":"39.00","image":"../uploads/1772758382_GREENAPPLEFRUITTEA.png","quantity":1}
+2026-03-12 07:44:25 - Check Query Success: 0 rows found.
+2026-03-12 07:44:25 - Insert Success! New Cart ID: 91

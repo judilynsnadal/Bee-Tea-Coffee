@@ -1,0 +1,343 @@
+Time: 2026-02-19 07:39:19
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Action: Insert Failed: Table 'btc.shopping_cart' doesn't exist
+
+Time: 2026-02-19 07:39:48
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Action: Insert Failed: Table 'btc.shopping_cart' doesn't exist
+
+Time: 2026-02-19 07:43:43
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Action: Insert Failed: Unknown column 'product' in 'field list'
+
+Time: 2026-02-19 07:43:52
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Action: Insert Failed: Unknown column 'product' in 'field list'
+
+Time: 2026-02-19 07:43:57
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Action: Insert Failed: Unknown column 'product' in 'field list'
+
+Time: 2026-02-19 07:44:22
+User ID: 33
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Action: Insert Failed: Unknown column 'product' in 'field list'
+
+Time: 2026-02-19 07:44:25
+User ID: 33
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Action: Insert Failed: Unknown column 'product' in 'field list'
+
+Time: 2026-02-19 07:54:49
+User ID: 33
+Raw Input: {"name":"Caramel Macchiato","price":"160","image":"images/CARAMEL MACCHIATO.png","quantity":1}
+Action: Insert Success (ID: 9)
+
+Time: 2026-02-19 07:56:41
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Action: Insert Success (ID: 10)
+
+Time: 2026-02-19 08:31:12
+User ID: 33
+Raw Input: {"name":"Mocha","price":"160","image":"images/MOCHA.png","quantity":1}
+Action: Insert Success (ID: 11)
+
+Time: 2026-02-19 09:07:28
+User ID: 33
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Action: Insert Success (ID: 12)
+
+Time: 2026-02-19 09:35:19
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cookies & Cream'
+Rows Found: 1
+End Request
+
+Time: 2026-02-19 09:35:44
+User ID: 33
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cheesecake'
+Rows Found: 1
+End Request
+
+Time: 2026-02-19 09:46:52
+User ID: 33
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cheesecake'
+Rows Found: 1
+End Request
+
+Time: 2026-02-19 09:49:05
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cookies & Cream'
+Rows Found: 1
+End Request
+
+Time: 2026-02-19 09:49:09
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cookies & Cream'
+Rows Found: 1
+End Request
+
+Time: 2026-02-19 09:49:31
+User ID: 33
+Raw Input: {"name":"Dark Chocolate","price":"140","image":"images/DARK CHOCOLATE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Dark Chocolate'
+Rows Found: 0
+Action: Insert Success (ID: 13)
+
+Time: 2026-02-19 09:49:31
+User ID: 33
+Raw Input: {"name":"Dark Chocolate","price":"140","image":"images/DARK CHOCOLATE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Dark Chocolate'
+Rows Found: 0
+End Request
+
+Time: 2026-02-19 10:15:28
+User ID: 33
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cheesecake'
+Rows Found: 1
+End Request
+
+Time: 2026-03-02 12:23:36
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cookies & Cream'
+Rows Found: 0
+Action: Insert Success (ID: 14)
+
+Time: 2026-03-02 12:23:36
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cookies & Cream'
+Rows Found: 0
+End Request
+
+Time: 2026-03-02 12:26:48
+User ID: 31
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Cheesecake'
+Rows Found: 0
+Action: Insert Success (ID: 15)
+
+Time: 2026-03-02 12:26:48
+User ID: 31
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Cheesecake'
+Rows Found: 0
+End Request
+
+Time: 2026-03-02 12:43:06
+User ID: 31
+Raw Input: {"name":"Caramel Macchiato","price":"160","image":"images/CARAMEL MACCHIATO.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Caramel Macchiato'
+Rows Found: 0
+Action: Insert Success (ID: 16)
+
+Time: 2026-03-02 12:43:06
+User ID: 31
+Raw Input: {"name":"Caramel Macchiato","price":"160","image":"images/CARAMEL MACCHIATO.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Caramel Macchiato'
+Rows Found: 0
+End Request
+
+Time: 2026-03-02 12:54:49
+User ID: 31
+Raw Input: {"name":"Dark Chocolate","price":"140","image":"images/DARK CHOCOLATE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Dark Chocolate'
+Rows Found: 0
+Action: Insert Success (ID: 17)
+
+Time: 2026-03-02 12:54:49
+User ID: 31
+Raw Input: {"name":"Dark Chocolate","price":"140","image":"images/DARK CHOCOLATE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Dark Chocolate'
+Rows Found: 0
+End Request
+
+Time: 2026-03-02 13:06:53
+User ID: 31
+Raw Input: {"name":"Mocha","price":"160","image":"images/MOCHA.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Mocha'
+Rows Found: 0
+Action: Insert Success (ID: 18)
+
+Time: 2026-03-02 13:06:53
+User ID: 31
+Raw Input: {"name":"Mocha","price":"160","image":"images/MOCHA.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Mocha'
+Rows Found: 0
+End Request
+
+Time: 2026-03-02 13:42:27
+User ID: 31
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Cheesecake'
+Rows Found: 0
+Action: Insert Success (ID: 19)
+
+Time: 2026-03-02 13:42:27
+User ID: 31
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Cheesecake'
+Rows Found: 0
+End Request
+
+Time: 2026-03-02 14:11:35
+User ID: 31
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Cookies & Cream'
+Rows Found: 0
+Action: Insert Success (ID: 20)
+
+Time: 2026-03-02 14:11:35
+User ID: 31
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Cookies & Cream'
+Rows Found: 0
+End Request
+
+Time: 2026-03-02 14:36:11
+User ID: 31
+Raw Input: {"name":"Caramel Macchiato","price":"160","image":"images/CARAMEL MACCHIATO.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Caramel Macchiato'
+Rows Found: 0
+Action: Insert Success (ID: 21)
+
+Time: 2026-03-02 14:36:11
+User ID: 31
+Raw Input: {"name":"Caramel Macchiato","price":"160","image":"images/CARAMEL MACCHIATO.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Caramel Macchiato'
+Rows Found: 0
+End Request
+
+Time: 2026-03-02 14:46:01
+User ID: 31
+Raw Input: {"name":"Mocha","price":"160","image":"images/MOCHA.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Mocha'
+Rows Found: 0
+Action: Insert Success (ID: 22)
+
+Time: 2026-03-02 14:46:01
+User ID: 31
+Raw Input: {"name":"Mocha","price":"160","image":"images/MOCHA.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Mocha'
+Rows Found: 0
+End Request
+
+Time: 2026-03-03 07:22:15
+User ID: 34
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '34' AND product_name = 'Cookies & Cream'
+Rows Found: 0
+Action: Insert Success (ID: 23)
+
+Time: 2026-03-03 07:22:15
+User ID: 34
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '34' AND product_name = 'Cookies & Cream'
+Rows Found: 0
+End Request
+
+Time: 2026-03-03 12:02:03
+User ID: 33
+Raw Input: {"name":"Caramel Macchiato","price":"160","image":"images/CARAMEL MACCHIATO.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Caramel Macchiato'
+Rows Found: 0
+Action: Insert Success (ID: 24)
+
+Time: 2026-03-03 12:02:03
+User ID: 33
+Raw Input: {"name":"Caramel Macchiato","price":"160","image":"images/CARAMEL MACCHIATO.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Caramel Macchiato'
+Rows Found: 0
+End Request
+
+Time: 2026-03-03 12:53:17
+User ID: 31
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Cheesecake'
+Rows Found: 0
+Action: Insert Success (ID: 25)
+
+Time: 2026-03-03 12:53:17
+User ID: 31
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '31' AND product_name = 'Cheesecake'
+Rows Found: 0
+End Request
+
+Time: 2026-03-04 08:32:49
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cookies & Cream'
+Rows Found: 0
+Action: Insert Success (ID: 26)
+
+Time: 2026-03-04 08:32:49
+User ID: 33
+Raw Input: {"name":"Cookies & Cream","price":"120","image":"images/COOKIES & CREAM.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cookies & Cream'
+Rows Found: 0
+End Request
+
+Time: 2026-03-04 10:49:26
+User ID: 33
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cheesecake'
+Rows Found: 0
+Action: Insert Success (ID: 27)
+
+Time: 2026-03-04 10:49:26
+User ID: 33
+Raw Input: {"name":"Cheesecake","price":"150","image":"images/CHEESECAKE.png","quantity":1}
+Schema: id(int(11) unsigned), user_id(int(11)), product_name(varchar(255)), price(decimal(10,2)), quantity(int(11)), image(varchar(255)), created_at(timestamp)
+Check Query: SELECT id, quantity FROM cart WHERE user_id = '33' AND product_name = 'Cheesecake'
+Rows Found: 0
+End Request
+
